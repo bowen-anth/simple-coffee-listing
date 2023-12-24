@@ -30,8 +30,8 @@
   text-align: center;
   background-image: url('vector.svg');
   background-repeat: no-repeat;
-  background-attachment:scroll;
-  background-position: 175% 5%;
+  background-attachment:fixed;
+  background-position: 80% 15%;
   background-size: auto;
   background-color: #1B1D1F;
   padding-top: 2em;
@@ -165,13 +165,42 @@
   margin-left: auto;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 1024px) {
+
+.card-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #1B1D1F;
+}
+
+.name-price-container {
+  margin-top: .0em;
+}
+
   .card-container {
-    width: 190px;
+    width: auto;
+    flex-basis: calc(50% - 3em);
+    margin-bottom: 1em;
+  }
+  .card-container > img {
+    margin: 0 auto;
+  }
+  
+  .popular {
+    top: 4px;
+    right: 190px;
+    padding: 2px 4px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .card-container {
+    width: 200px;
   }
   .popular {
     top: 20px;
-    right: 122px;
+    right: 128px;
     padding: 2px 4px;
   }
 }

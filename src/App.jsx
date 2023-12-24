@@ -19,7 +19,9 @@ function App() {
         <div className="card-over-container">
           <Header />
           <Buttons />
+          <div className="card-grid-container">
           {cards}
+          </div>
         </div>
       </main>
     </>
