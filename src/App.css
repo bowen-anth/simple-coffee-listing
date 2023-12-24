@@ -233,7 +233,7 @@
   .popular {
     position: absolute;
     top: 6px;
-    left: 8px;
+    left: 6px;
     background-color: #F6C768;
     color: black;
     border-radius: 25px;
@@ -248,7 +248,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 
   .card-grid-container {
     /* display: flex; */
@@ -260,7 +260,7 @@
   }
 
   .card-container {
-    width: 200px;
+    width: 220px;
     display: flex;
     flex-direction: column;
     flex-basis: 1;
