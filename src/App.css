@@ -2,20 +2,16 @@
   background-color: #111315;
   background-image: url('bg-cafe.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: top;
   background-size: contain;
   padding: 12vh;
 }
 
 .card-over-container {
-  /* background-image: url('vector.svg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 70% 16%;
-  background-size: auto;
-  background-color: #1B1D1F; */
-  width: 80%;
+
+  background-color: #1B1D1F;
+  width: 100%;
   margin: 0 auto;
   color: #FEF7EE;
   padding: 2rem;
@@ -23,8 +19,24 @@
   background-color: #1B1D1F;
 }
 
+.header-container > img {
+  position: absolute;
+  top: 25%;
+  bottom: 50%;
+  color: #1B1D1F;
+  fill: #1B1D1F; /* changes the color to red */
+}
+
 .header-container {
   text-align: center;
+  background-image: url('vector.svg');
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  position: relative;
+  background-position: 175% 5%;
+  background-size: auto;
+  background-color: #1B1D1F;
+  padding-top: 2em;
 }
 
 .header-container,
