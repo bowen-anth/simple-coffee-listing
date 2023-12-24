@@ -9,13 +9,13 @@ const Card = (props) => {
         popular = "POPULAR"
     }
     let soldOut
-    if (props.available === true) {
+    if (props.available === false) {
         soldOut = "Sold out"
     }
     return (
         <>
             <div className="card-container">
-                {/* {popular && <div className="card--badge">{popular}</div>} */}
+                {popular && <div className="popular">{popular}</div>}
                 <img src={props.image}
                 alt={`a picture of ${props.name}`} width="200px" height="height" />
                 <div className="name-price-container">
@@ -24,8 +24,8 @@ const Card = (props) => {
                 <div className="rating-container">
                     <img src="public/Star_fill.svg" alt="a filled star" width="10px" height="auto"/>
                     <span className="rating-span">{props.rating}</span>
-                    <span className="votes-span">{props.votes ? `(${props.votes})` : "No ratings"}</span>
-                    {/* {soldOut && <span className="sold-out-span">{soldOut}</span>} */}
+                    <span className="votes-span">{props.votes ? `(${props.votes} votes)` : "No ratings"}</span>
+                    {soldOut && <span className="sold-out-span">{soldOut}</span>}
                 </div>
             </div>
         </>

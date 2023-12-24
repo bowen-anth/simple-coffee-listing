@@ -96,7 +96,7 @@
   margin: 1em auto;
 }
 
-.card--badge {
+.popular {
   position: absolute;
   top: 6px;
   left: 6px;
@@ -124,6 +124,8 @@
 .rating-container {
   margin-top: -.5em;
   margin-bottom: 1em;
+  align-content: center;
+  display: flex;
 }
 
 .coffee-price-p {
@@ -143,4 +145,19 @@
 .votes-span,
 .rating-span {
   background-color: #1B1D1F;
+}
+
+.votes-span {
+  color: #6F757C;
+  margin: .25em;
+  font-size: .75em;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.sold-out-span {
+  background-color: #1B1D1F;
+  color: #ED735D;
+  margin-left: auto;
 }
