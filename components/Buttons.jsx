@@ -27,8 +27,8 @@ console.log(selected)
     return (
         <>
             <div className="button-container">
-                <button className="all-products" onClick={toggleProducts}>All Products</button>
-                <button className="available-now" onClick={toggleAvailable}>Available Now</button>
+                <button className={selected.allProducts ? "all-products selected" : "all-products"} onClick={toggleProducts}>All Products</button>
+                <button className={selected.availableNow ? "available-now selected" : "available-now"} onClick={toggleAvailable}>Available Now</button>
             </div>
         </>
     )

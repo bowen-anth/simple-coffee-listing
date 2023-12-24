@@ -54,6 +54,10 @@
   color: #FEF7EE;
 }
 
+.button-container {
+  margin: 2em auto;
+}
+
 .button-container,
 .button-container > button {
   background-color: #1B1D1F;
@@ -64,11 +68,13 @@
 .all-products,
 .available-now {
   border: none;
-  padding: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: .5em 1em;
 } 
 
-.available-now {
-
+.selected {
+  background-color: #6F757C !important;
 }
 
 .card-container {
