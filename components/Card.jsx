@@ -14,7 +14,7 @@ const Card = (props) => {
     }
     return (
         <>
-            <div className="card-wrapper">
+            
                 <div className="card-container">
                     {popular && <div className="popular">{popular}</div>}
                     <img src={props.image}
@@ -29,7 +29,7 @@ const Card = (props) => {
                         {soldOut && <span className="sold-out-span">{soldOut}</span>}
                     </div>
                 </div>
-            </div>
+            
         </>
     )
 }

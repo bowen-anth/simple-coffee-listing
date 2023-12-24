@@ -186,10 +186,10 @@
   .card-container > img {
     margin: 0 auto;
   }
-  
+
   .popular {
     top: 4px;
-    right: 190px;
+    right: 256px;
     padding: 2px 4px;
   }
 }
