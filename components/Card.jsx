@@ -22,7 +22,7 @@ const Card = (props) => {
                     <p className="coffee-price-p">{props.name}</p><span className="price-span">{props.price}</span>
                 </div>
                 <div className="rating-container">
-                    <img src="public/Star_fill.svg" alt="a filled star" width="10px" height="auto"/>
+                    <img src="public/Star_fill.svg" alt="a filled star" width="20px" height="auto"/>
                     <span className="rating-span">{props.rating}</span>
                     <span className="votes-span">{props.votes ? `(${props.votes} votes)` : "No ratings"}</span>
                     {soldOut && <span className="sold-out-span">{soldOut}</span>}

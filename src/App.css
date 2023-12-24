@@ -31,7 +31,6 @@
   background-image: url('vector.svg');
   background-repeat: no-repeat;
   background-attachment:scroll;
-  position: relative;
   background-position: 175% 5%;
   background-size: auto;
   background-color: #1B1D1F;
@@ -129,6 +128,7 @@
   margin-bottom: 1em;
   align-content: center;
   display: flex;
+  gap: 3px;
 }
 
 .coffee-price-p {
@@ -163,4 +163,15 @@
   background-color: #1B1D1F;
   color: #ED735D;
   margin-left: auto;
+}
+
+@media screen and (max-width: 620px) {
+  .card-container {
+    width: 190px;
+  }
+  .popular {
+    top: 20px;
+    right: 122px;
+    padding: 2px 4px;
+  }
 }
