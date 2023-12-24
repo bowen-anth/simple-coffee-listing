@@ -2,7 +2,6 @@ import React from "react"
 
 const Card = (props) => {
 
-    console.log(props.selected)
     let popular
     if (props.popular === true) {
         popular = "POPULAR"
