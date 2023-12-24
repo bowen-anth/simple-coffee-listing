@@ -2,8 +2,7 @@ import React from "react"
 
 const Card = (props) => {
 
-    console.log(props)
-
+    console.log(props.selected)
     let popular
     if (props.popular === true) {
         popular = "POPULAR"
@@ -14,7 +13,7 @@ const Card = (props) => {
     }
     return (
         <>
-            
+            {(props.selected.allProducts || (props.selected.availableNow && props.available)) && (
                 <div className="card-container">
                     {popular && <div className="popular">{popular}</div>}
                     <img src={props.image}
@@ -29,7 +28,7 @@ const Card = (props) => {
                         {soldOut && <span className="sold-out-span">{soldOut}</span>}
                     </div>
                 </div>
-            
+)}
         </>
     )
 }

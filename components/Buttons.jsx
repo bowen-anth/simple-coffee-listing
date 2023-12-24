@@ -1,11 +1,11 @@
 import React from "react"
 
-const Buttons = () => {
-    const [selected, setSelected] = React.useState({
-        allProducts: true,
-        availableNow: false
-    })
-console.log(selected)
+const Buttons = ({ selected, setSelected }) => {
+//     const [selected, setSelected] = React.useState({
+//         allProducts: true,
+//         availableNow: false
+//     })
+// console.log(selected)
     const toggleProducts = () => {
         setSelected(prevState => {
             return {
