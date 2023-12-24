@@ -15,9 +15,14 @@ function App() {
 
   return (
     <>
-     <Header />
-     <Buttons />
-     {cards}
+    {/* <img id="nav-img" src="bg-cafe.jpg" width="1400px" height="auto"/> */}
+      <main className="main-container">
+        <div className="card-over-container">
+          <Header />
+          <Buttons />
+          {cards}
+        </div>
+      </main>
     </>
   )
 }

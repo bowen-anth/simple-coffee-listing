@@ -1,3 +1,78 @@
+.main-container {
+  background-color: #111315;
+  background-image: url('bg-cafe.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: contain;
+  padding: 12vh;
+}
+
+.card-over-container {
+  /* background-image: url('vector.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 70% 16%;
+  background-size: auto;
+  background-color: #1B1D1F; */
+  width: 80%;
+  margin: 0 auto;
+  color: #FEF7EE;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: #1B1D1F;
+}
+
+.header-container {
+  text-align: center;
+}
+
+.header-container,
+.header-container > h1,
+.header-container > p {
+  background-color: rgb(27, 29, 31, .01);
+}
+
+.header-container > p {
+  opacity: 0.7;
+  /* background-color: rgb(27, 29, 31, 0.5); */
+  color: #FEF7EE;
+}
+
+.button-container,
+.button-container > button {
+  background-color: #1B1D1F;
+  color: #FEF7EE;
+  text-align: center;
+}
+
+.all-products,
+.available-now {
+  border: none;
+  padding: 1em;
+} 
+
+.available-now {
+
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid white;
+  background-color: #1B1D1F;
+}
+
+.card-container > img {
+  width: 100%;
+  height: auto;
+}
+
 .card--badge {
   position: absolute;
   top: 6px;
@@ -6,4 +81,30 @@
   padding: 5px 7px;
   border-radius: 2px;
   font-weight: bold;
+}
+
+.name-price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.name-price-container,
+.rating-container {
+  width: 100%;
+}
+
+.coffee-price-p {
+  color: #FEF7EE;
+}
+
+.price-span {
+  background-color: #BEE3CC;
+  color:#111315;
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: .35em;
+  border-radius: 5px;
 }

@@ -18,7 +18,9 @@ const Card = (props) => {
                 {/* {popular && <div className="card--badge">{popular}</div>} */}
                 <img src={props.image}
                 alt={`a picture of ${props.name}`} width="200px" height="height" />
-                <p className="coffee-price-p">{props.name}<span className="price-span">{props.price}</span></p>
+                <div className="name-price-container">
+                    <p className="coffee-price-p">{props.name}</p><span className="price-span">{props.price}</span>
+                </div>
                 <div className="rating-container">
                     <img src="public/Star_fill.svg" alt="a filled star" width="10px" height="auto"/>
                     <span className="rating-span">{props.rating}</span>
