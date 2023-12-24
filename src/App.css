@@ -83,27 +83,30 @@
   justify-content: center;
   align-items: center;
   gap: 1em;
-  width: 60%;
+  width: 340px;
   margin: 0 auto;
   /* border: 2px solid white; */
   background-color: #1B1D1F;
+  position: relative;
 }
 
 .card-container > img {
   width: 100%;
   height: auto;
   border-radius: 15px;
-  margin: 1em auto;
+  margin: 1em 100%;
 }
 
 .popular {
   position: absolute;
-  top: 6px;
-  left: 6px;
-  background-color: white;
+  top: 25px;
+  right: 260px;
+  background-color: #F6C768;
+  color: black;
   padding: 5px 7px;
-  border-radius: 2px;
+  border-radius: 25px;
   font-weight: bold;
+  font-size: .75em;
 }
 
 .name-price-container {
